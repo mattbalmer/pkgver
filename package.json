@@ -1,0 +1,17 @@
+{
+    "name": "pkgver",
+    "version": "0.1.0",
+    "description": "CLI tool for semantic versioning",
+    "author": "Matt Balmer <contact@mattbalmer.com>",
+    "license": "MIT",
+    "preferGlobal": "true",
+    "bin": {
+        "pkgver": "./bin/ver.js",
+        "pkv": "./bin/ver.js"
+    },
+    "main": "./lib/index.js",
+    "dependencies": {
+        "optimist": "~0.6.1",
+        "semver": "~4.2.0"
+    }
+}
