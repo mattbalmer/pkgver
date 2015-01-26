@@ -7,7 +7,8 @@
     "preferGlobal": "true",
     "bin": {
         "pkgver": "./bin/ver.js",
-        "pkv": "./bin/ver.js"
+        "pkv": "./bin/ver.js",
+        "ver": "./bin/ver.js"
     },
     "main": "./lib/index.js",
     "dependencies": {
