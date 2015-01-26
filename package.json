@@ -1,6 +1,6 @@
 {
     "name": "pkgver",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "CLI tool for semantic versioning",
     "author": "Matt Balmer <contact@mattbalmer.com>",
     "license": "MIT",
