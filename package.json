@@ -1,6 +1,6 @@
 {
     "name": "pkgver",
-    "version": "0.1.1",
+    "version": "0.2.1",
     "description": "CLI tool for semantic versioning",
     "author": "Matt Balmer <contact@mattbalmer.com>",
     "license": "MIT",
@@ -12,6 +12,7 @@
     },
     "main": "./lib/index.js",
     "dependencies": {
+        "glob": "^5.0.5",
         "optimist": "~0.6.1",
         "semver": "~4.2.0"
     }

@@ -1,9 +1,9 @@
 # pkgver
-CLI tool for managing versions in JSON files.
+CLI tool for managing versions in Package files. (This includes package.json, bower.json, etc)
 
 ## Description
 
-Provides a simple CLI for reading, setting, bumping, and syncing the version numbers across JSON files.
+Provides a simple CLI for reading, setting, bumping, and syncing the version numbers across various package files.
 
 Example, you're writing a Javascript module that could be installed from either NPM or Bower.
 Consequently, you have a `package.json` and a `bower.json` in your module's directory.
@@ -25,19 +25,19 @@ The `part` option can be one of the 4 semver parts: `Major.minor.patch-pre`
 
 `pkv [log]` (`pkv` or `pkv log`)
 
-Will log out the name & version of all JSON files in the current directory. Will also mark any invalid version numbers.
+Will log out the name & version of all Package files in the current directory. Will also mark any invalid version numbers.
 
 ### Sync
 
 `pkv sync`
 
-Will sync the version numbers in all JSON files in the current directory to the highest version number found.
+Will sync the version numbers in all Package files in the current directory to the highest version number found.
 
 ### Set
 
 `pkv set [part] <value>` (`pkv set 1.2.3` or `pkv set patch 12`)
 
-Will set the version numbers in all JSON files in the current directory to the given value.
+Will set the version numbers in all Package files in the current directory to the given value.
 
 If `part` is not given, value must be a valid semver version number.
 
@@ -48,7 +48,7 @@ If `part` is given (Major.minor.patch-pre), the value must be an integer (Except
 
 `pkv bump [part]` (`pkv bump` or `pkv bump pre`)
 
-Will bump the version numbers in all JSON files in the current directory.
+Will bump the version numbers in all Package files in the current directory.
 
 If `part` is given (Major.minor.patch-pre), then the requested piece will be bumped by 1.
 
